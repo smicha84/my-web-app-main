@@ -254,7 +254,7 @@ const generateAppIdea = async (tweet, promptId) => {
     console.log('Calling OpenAI API...');
     // Using model and prompt exactly as specified by user
     const response = await openai.chat.completions.create({
-      model: "gpt-4o", // Using GPT-4o model
+      model: "chatgpt-4o-latest", // Using latest GPT-4o model with March 27, 2025 improvements
       messages: [
         { 
           role: "system", 
