@@ -12,12 +12,19 @@ const twitterRoutes = require('./routes/twitter');
 const ideasRoutes = require('./routes/ideas');
 const promptsRoutes = require('./routes/prompts');
 const testOpenaiRoutes = require('./routes/testOpenai');
+const pairsRoutes = require('./routes/pairs');
 
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
+
+// Serve the pairs viewer as a standalone page
+app.get('/pairs-viewer', (req, res) => {
+  res.sendFile('viewers/pairs-viewer.html', { root: 'public' });
+});
 
 // Routes
 app.get('/api/health', (req, res) => {
@@ -29,6 +36,7 @@ app.use('/api/twitter', twitterRoutes);
 app.use('/api/ideas', ideasRoutes);
 app.use('/api/prompts', promptsRoutes);
 app.use('/api/test/openai', testOpenaiRoutes);
+app.use('/api/pairs', pairsRoutes);
 
 // Database is already initialized in the ideas routes module
 

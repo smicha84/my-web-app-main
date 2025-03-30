@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Tweet-Idea Pairs</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e1e8ed;
+    }
+    
+    h1 {
+      color: #1d9bf0;
+      margin: 0;
+    }
+    
+    .back-link {
+      color: #1d9bf0;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+    }
+    
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    
+    .stats {
+      background-color: #e8f5e9;
+      border-radius: 8px;
+      padding: 8px 16px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    
+    .pair-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .pair-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    
+    .tweet-section {
+      margin-bottom: 16px;
+    }
+    
+    .section-header {
+      font-size: 16px;
+      color: #536471;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    
+    .tweet-text {
+      padding: 14px;
+      background-color: #f5f8fa;
+      border-radius: 8px;
+      border: 1px solid #e1e8ed;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    
+    .idea-section {
+      border-top: 1px solid #e1e8ed;
+      padding-top: 16px;
+    }
+    
+    .app-idea {
+      padding: 14px;
+      background-color: #f0f7ff;
+      border-radius: 8px;
+      border: 1px solid #cfe2ff;
+      white-space: pre-wrap;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 1.5;
+      overflow-x: auto;
+    }
+    
+    .app-name {
+      color: #0066cc;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    
+    .timestamp {
+      font-size: 0.8rem;
+      color: #536471;
+      margin-top: 8px;
+    }
+    
+    .loading, .error, .empty {
+      text-align: center;
+      padding: 30px;
+      border-radius: 8px;
+      margin: 40px 0;
+    }
+    
+    .loading {
+      background-color: #f0f7ff;
+    }
+    
+    .error {
+      background-color: #ffeeee;
+      border: 1px solid #ffcdd2;
+      color: #d32f2f;
+    }
+    
+    .empty {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+    }
+    
+    .refresh-btn {
+      background-color: #1d9bf0;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    
+    .refresh-btn:hover {
+      background-color: #1a8cd8;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #15202b;
+        color: #f7f9f9;
+      }
+      
+      .pair-card {
+        background-color: #192734;
+        border-color: #38444d;
+      }
+      
+      .tweet-text {
+        background-color: #1e2732;
+        border-color: #38444d;
+        color: #f7f9f9;
+      }
+      
+      .app-idea {
+        background-color: #162d40;
+        border-color: #1d3b53;
+        color: #f7f9f9;
+      }
+      
+      .empty, .loading {
+        background-color: #192734;
+        border-color: #38444d;
+      }
+      
+      .error {
+        background-color: #2c1618;
+        border-color: #641e20;
+      }
+      
+      .stats {
+        background-color: #193123;
+        color: #a3eabd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-header">
+    <h1>Saved Tweet-Idea Pairs</h1>
+    <a href="/" class="back-link">← Back to App</a>
+  </div>
+  
+  <div id="pairs-container">
+    <div class="loading">Loading saved pairs...</div>
+  </div>
+
+  <script>
+    // Get pairs container
+    const pairsContainer = document.getElementById('pairs-container');
+    
+    // Function to fetch all pairs
+    async function fetchPairs() {
+      try {
+        const response = await fetch('/api/pairs');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        
+        return await response.json();
+      } catch (error) {
+        console.error('Failed to fetch pairs:', error);
+        throw error;
+      }
+    }
+    
+    // Function to format date
+    function formatDate(dateString) {
+      if (!dateString) return 'Unknown date';
+      const date = new Date(dateString);
+      
+      // Check if date is valid
+      if (isNaN(date.getTime())) return 'Invalid date';
+      
+      // Format: "March 29, 2025 at 10:45 PM"
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric'
+      }) + ' at ' + date.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      });
+    }
+    
+    // Function to render pairs
+    function renderPairs(pairs) {
+      if (!pairs || pairs.length === 0) {
+        pairsContainer.innerHTML = `
+          <div class="empty">
+            <h3>No saved tweet-idea pairs found</h3>
+            <p>Generate and save some ideas in the main app first.</p>
+            <button class="refresh-btn" onclick="init()">Refresh</button>
+          </div>
+        `;
+        return;
+      }
+      
+      // Clear loading message
+      pairsContainer.innerHTML = '';
+      
+      // Add count indicator
+      const countElement = document.createElement('div');
+      countElement.className = 'stats';
+      countElement.textContent = `Found ${pairs.length} saved pairs`;
+      pairsContainer.appendChild(countElement);
+      
+      // Create and append pair cards
+      pairs.forEach((pair, index) => {
+        const pairCard = document.createElement('div');
+        pairCard.className = 'pair-card';
+        
+        // Extract tweet data
+        const tweetText = pair.tweet_text || 'No tweet text available';
+        
+        // Extract app idea from the correct nested structure
+        let appIdea = 'No app idea available';
+        let appName = '';
+        
+        if (pair.app_idea_json) {
+          if (typeof pair.app_idea_json === 'string') {
+            try {
+              const parsed = JSON.parse(pair.app_idea_json);
+              appIdea = parsed.app_idea || 'No app idea available';
+              appName = parsed.appName || '';
+            } catch (e) {
+              console.error('Failed to parse app_idea_json string:', e);
+            }
+          } else if (typeof pair.app_idea_json === 'object') {
+            appIdea = pair.app_idea_json.app_idea || 'No app idea available';
+            appName = pair.app_idea_json.appName || '';
+          }
+        }
+        
+        const createdAt = pair.created_at || '';
+        
+        pairCard.innerHTML = `
+          <div class="tweet-section">
+            <div class="section-header">Tweet</div>
+            <div class="tweet-text">${tweetText}</div>
+            <div class="timestamp">Saved: ${formatDate(createdAt)}</div>
+          </div>
+          
+          <div class="idea-section">
+            <div class="section-header">Generated App Idea</div>
+            <div class="app-idea">
+              ${appName ? `<div class="app-name">${appName}</div>` : ''}
+              ${appIdea}
+            </div>
+          </div>
+        `;
+        
+        pairsContainer.appendChild(pairCard);
+      });
+      
+      // Add refresh button
+      const refreshBtn = document.createElement('button');
+      refreshBtn.className = 'refresh-btn';
+      refreshBtn.textContent = 'Refresh Pairs';
+      refreshBtn.addEventListener('click', init);
+      pairsContainer.appendChild(refreshBtn);
+    }
+    
+    // Main function to initialize
+    async function init() {
+      pairsContainer.innerHTML = '<div class="loading">Loading saved pairs...</div>';
+      
+      try {
+        const pairs = await fetchPairs();
+        renderPairs(pairs);
+      } catch (error) {
+        pairsContainer.innerHTML = `
+          <div class="error">
+            <h3>Error</h3>
+            <p>Failed to load saved pairs: ${error.message}</p>
+            <p>Make sure your backend API is running on port 3001.</p>
+            <button class="refresh-btn" onclick="init()">Try Again</button>
+          </div>
+        `;
+      }
+    }
+    
+    // Start the app
+    init();
+  </script>
+</body>
+</html>

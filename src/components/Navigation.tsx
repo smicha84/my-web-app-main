@@ -1,8 +1,9 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box, Tooltip } from '@mui/material';
 import { Link, useLocation } from 'react-router-dom';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 
 const Navigation: React.FC = () => {
   const location = useLocation();
@@ -36,12 +37,32 @@ const Navigation: React.FC = () => {
             color="inherit"
             startIcon={<LightbulbIcon />}
             sx={{ 
+              mr: 2,
               fontWeight: location.pathname === '/ideas' ? 'bold' : 'normal',
               textDecoration: location.pathname === '/ideas' ? 'underline' : 'none'
             }}
           >
             App Ideas
           </Button>
+
+          <Tooltip title="View all saved tweet-idea pairs">
+            <Button 
+              component="a" 
+              href="/pairs-viewer" 
+              color="inherit"
+              target="_blank"
+              rel="noopener"
+              startIcon={<ListAltIcon />}
+              sx={{ 
+                bgcolor: 'rgba(255, 255, 255, 0.1)',
+                '&:hover': {
+                  bgcolor: 'rgba(255, 255, 255, 0.2)'
+                }
+              }}
+            >
+              Pairs Viewer
+            </Button>
+          </Tooltip>
         </Box>
       </Toolbar>
     </AppBar>
