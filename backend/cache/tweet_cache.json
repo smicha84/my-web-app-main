@@ -1,0 +1,712 @@
+{
+  "tweets": [
+    {
+      "text": "Producer and infamous bully Scott Rudin plans to return to Broadway with a series of shows with Laurie Metcalf. He has a new profile in the New York Times where he discusses apologizing for his past indiscretions.  https://t.co/tcFMUNpXWD",
+      "created_at": "2025-03-28T22:33:19.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 0
+      },
+      "author_id": "24216951",
+      "entities": {
+        "annotations": [
+          {
+            "start": 28,
+            "end": 38,
+            "probability": 0.9394,
+            "type": "Person",
+            "normalized_text": "Scott Rudin"
+          },
+          {
+            "start": 59,
+            "end": 66,
+            "probability": 0.6952,
+            "type": "Place",
+            "normalized_text": "Broadway"
+          },
+          {
+            "start": 96,
+            "end": 109,
+            "probability": 0.8396,
+            "type": "Person",
+            "normalized_text": "Laurie Metcalf"
+          },
+          {
+            "start": 140,
+            "end": 153,
+            "probability": 0.9715,
+            "type": "Other",
+            "normalized_text": "New York Times"
+          }
+        ],
+        "urls": [
+          {
+            "start": 215,
+            "end": 238,
+            "url": "https://t.co/tcFMUNpXWD",
+            "expanded_url": "https://www.vulture.com/article/scott-rudin-broadway-comeback-laurie-metcalf.html?utm_campaign=vulture&utm_medium=s1&utm_source=twitter",
+            "display_url": "vulture.com/article/scott-…",
+            "status": 200,
+            "title": "Scott Rudin Hopes Laurie Metcalf Distracts You From His Past",
+            "description": "The infamous bully producer makes plans to return to Broadway.",
+            "unwound_url": "https://www.vulture.com/article/scott-rudin-broadway-comeback-laurie-metcalf.html?utm_campaign=vulture&utm_medium=s1&utm_source=twitter"
+          }
+        ]
+      },
+      "id": "1905750076003348542",
+      "edit_history_tweet_ids": [
+        "1905750076003348542"
+      ],
+      "conversation_id": "1905750076003348542",
+      "author": {
+        "id": "24216951",
+        "username": "vulture",
+        "name": "Vulture",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1544311347923587073/etnDEfMk_normal.jpg"
+      }
+    },
+    {
+      "text": "It’s a struggle with deadly consequences for vulnerable people around the world. https://t.co/Ksxa96N5YG",
+      "created_at": "2025-03-28T22:33:19.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 0
+      },
+      "author_id": "2347049341",
+      "id": "1905750075617530273",
+      "edit_history_tweet_ids": [
+        "1905750075617530273"
+      ],
+      "entities": {
+        "urls": [
+          {
+            "start": 81,
+            "end": 104,
+            "url": "https://t.co/Ksxa96N5YG",
+            "expanded_url": "https://www.vox.com/politics/406403/foreign-aid-doge-trump-rubio",
+            "display_url": "vox.com/politics/40640…",
+            "status": 200,
+            "title": "The fight for USAID’s future, briefly explained",
+            "description": "It’s a struggle with deadly consequences for vulnerable people around the world.",
+            "unwound_url": "https://www.vox.com/politics/406403/foreign-aid-doge-trump-rubio"
+          }
+        ]
+      },
+      "conversation_id": "1905750075617530273",
+      "author": {
+        "id": "2347049341",
+        "username": "voxdotcom",
+        "name": "Vox",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/807306191395241984/s8xmWAvU_normal.jpg"
+      }
+    },
+    {
+      "text": "A datacenter story... https://t.co/I8iOLboL1O",
+      "created_at": "2025-03-28T22:33:11.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 2
+      },
+      "author_id": "73433626",
+      "attachments": {
+        "media_keys": [
+          "7_1905749501295681536"
+        ]
+      },
+      "id": "1905750041941385414",
+      "edit_history_tweet_ids": [
+        "1905750041941385414"
+      ],
+      "entities": {
+        "urls": [
+          {
+            "start": 22,
+            "end": 45,
+            "url": "https://t.co/I8iOLboL1O",
+            "expanded_url": "https://x.com/diffbot/status/1905750041941385414/video/1",
+            "display_url": "pic.x.com/I8iOLboL1O",
+            "media_key": "7_1905749501295681536"
+          }
+        ]
+      },
+      "conversation_id": "1905750041941385414",
+      "author": {
+        "id": "73433626",
+        "username": "diffbot",
+        "name": "Diffbot 🤖",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1533931163244498946/pr0shnu4_normal.jpg"
+      },
+      "media": [
+        {
+          "height": 1920,
+          "media_key": "7_1905749501295681536",
+          "type": "video",
+          "width": 1080,
+          "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1905749501295681536/pu/img/1sfMSU61dOUINsp5.jpg"
+        }
+      ]
+    },
+    {
+      "text": "Listening to @HighonFireBand - Blessed Black Wings",
+      "created_at": "2025-03-28T22:33:02.000Z",
+      "entities": {
+        "mentions": [
+          {
+            "start": 13,
+            "end": 28,
+            "username": "HighonFireBand",
+            "id": "26580478"
+          }
+        ],
+        "annotations": [
+          {
+            "start": 31,
+            "end": 49,
+            "probability": 0.7614,
+            "type": "Other",
+            "normalized_text": "Blessed Black Wings"
+          }
+        ]
+      },
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 3
+      },
+      "author_id": "747820976398753792",
+      "id": "1905750004347932689",
+      "edit_history_tweet_ids": [
+        "1905750004347932689"
+      ],
+      "conversation_id": "1905750004347932689",
+      "author": {
+        "id": "747820976398753792",
+        "username": "devgru1980mi",
+        "name": "Christopher Wolford",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1838631159611129857/7_-FKLZl_normal.jpg"
+      }
+    },
+    {
+      "text": "@golang https://t.co/vu0cvFeJVh",
+      "created_at": "2025-03-28T22:33:01.000Z",
+      "entities": {
+        "mentions": [
+          {
+            "start": 0,
+            "end": 7,
+            "username": "golang",
+            "id": "113419064"
+          }
+        ],
+        "urls": [
+          {
+            "start": 8,
+            "end": 31,
+            "url": "https://t.co/vu0cvFeJVh",
+            "expanded_url": "https://thenewstack.io/pagoda-a-web-development-starter-kit-for-go-programmers/",
+            "display_url": "thenewstack.io/pagoda-a-web-d…",
+            "images": [
+              {
+                "url": "https://pbs.twimg.com/news_img/1905750031107534848/nQcWpPsv?format=jpg&name=orig",
+                "width": 1280,
+                "height": 720
+              },
+              {
+                "url": "https://pbs.twimg.com/news_img/1905750031107534848/nQcWpPsv?format=jpg&name=150x150",
+                "width": 150,
+                "height": 150
+              }
+            ],
+            "status": 200,
+            "title": "Pagoda: A Web Development Starter Kit for Go Programmers",
+            "description": "Mike Stefanello found the JS framework world to be chaotic. Needing a quick way to start web development projects in Go, he created Pagoda.",
+            "unwound_url": "https://thenewstack.io/pagoda-a-web-development-starter-kit-for-go-programmers/"
+          }
+        ]
+      },
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 0
+      },
+      "referenced_tweets": [
+        {
+          "text": "Mike Stefanello found the JS framework world to be chaotic. Needing a quick way to start web development projects in @GoLang, he created Pagoda.",
+          "created_at": "2025-03-28T22:33:01.000Z",
+          "entities": {
+            "mentions": [
+              {
+                "start": 117,
+                "end": 124,
+                "username": "golang",
+                "id": "113419064"
+              }
+            ],
+            "annotations": [
+              {
+                "start": 0,
+                "end": 14,
+                "probability": 0.8547,
+                "type": "Person",
+                "normalized_text": "Mike Stefanello"
+              },
+              {
+                "start": 26,
+                "end": 27,
+                "probability": 0.5715,
+                "type": "Other",
+                "normalized_text": "JS"
+              },
+              {
+                "start": 137,
+                "end": 142,
+                "probability": 0.5843,
+                "type": "Other",
+                "normalized_text": "Pagoda"
+              }
+            ]
+          },
+          "public_metrics": {
+            "retweet_count": 0,
+            "reply_count": 1,
+            "like_count": 0,
+            "quote_count": 0,
+            "bookmark_count": 0,
+            "impression_count": 4
+          },
+          "author_id": "2327560616",
+          "id": "1905749996764574180",
+          "edit_history_tweet_ids": [
+            "1905749996764574180"
+          ],
+          "conversation_id": "1905749996764574180",
+          "reference_type": "replied_to",
+          "author": {
+            "id": "2327560616",
+            "username": "thenewstack",
+            "name": "The New Stack"
+          }
+        }
+      ],
+      "author_id": "2327560616",
+      "id": "1905749997993529660",
+      "edit_history_tweet_ids": [
+        "1905749997993529660"
+      ],
+      "conversation_id": "1905749996764574180",
+      "author": {
+        "id": "2327560616",
+        "username": "thenewstack",
+        "name": "The New Stack",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/650494844536647680/kxpz8kAv_normal.png"
+      }
+    },
+    {
+      "text": "Mike Stefanello found the JS framework world to be chaotic. Needing a quick way to start web development projects in @GoLang, he created Pagoda.",
+      "created_at": "2025-03-28T22:33:01.000Z",
+      "entities": {
+        "mentions": [
+          {
+            "start": 117,
+            "end": 124,
+            "username": "golang",
+            "id": "113419064"
+          }
+        ],
+        "annotations": [
+          {
+            "start": 0,
+            "end": 14,
+            "probability": 0.8547,
+            "type": "Person",
+            "normalized_text": "Mike Stefanello"
+          },
+          {
+            "start": 26,
+            "end": 27,
+            "probability": 0.5715,
+            "type": "Other",
+            "normalized_text": "JS"
+          },
+          {
+            "start": 137,
+            "end": 142,
+            "probability": 0.5843,
+            "type": "Other",
+            "normalized_text": "Pagoda"
+          }
+        ]
+      },
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 1,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 4
+      },
+      "author_id": "2327560616",
+      "id": "1905749996764574180",
+      "edit_history_tweet_ids": [
+        "1905749996764574180"
+      ],
+      "conversation_id": "1905749996764574180",
+      "author": {
+        "id": "2327560616",
+        "username": "thenewstack",
+        "name": "The New Stack",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/650494844536647680/kxpz8kAv_normal.png"
+      }
+    },
+    {
+      "text": "I have mixed feelings. I have empathy for people who want to do art commercially, but the reality is that these will be useful tools, even for commercial artists.\n\nI’ve written at length how the best artists of the future will train their own AI to work in their style and do some https://t.co/ckgjKzcDxR",
+      "created_at": "2025-03-28T22:32:51.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 99
+      },
+      "referenced_tweets": [
+        {
+          "text": "Faze Banks joins in on the AI art conversation, says he’s good on paying artists\n\n“AI takes a fraction of the time, doesn’t complain…virtue signal…isn’t opposed to new, more efficient ways…use these incredible tools…sh*ts happening with or without you” https://t.co/CEPE0bDJt1",
+          "created_at": "2025-03-28T18:54:32.000Z",
+          "public_metrics": {
+            "retweet_count": 2,
+            "reply_count": 18,
+            "like_count": 146,
+            "quote_count": 3,
+            "bookmark_count": 10,
+            "impression_count": 6672
+          },
+          "author_id": "1741916934164381696",
+          "attachments": {
+            "media_keys": [
+              "3_1905694609814192128",
+              "3_1905694609831006208"
+            ]
+          },
+          "entities": {
+            "annotations": [
+              {
+                "start": 0,
+                "end": 9,
+                "probability": 0.9616,
+                "type": "Person",
+                "normalized_text": "Faze Banks"
+              },
+              {
+                "start": 27,
+                "end": 28,
+                "probability": 0.6511,
+                "type": "Organization",
+                "normalized_text": "AI"
+              },
+              {
+                "start": 83,
+                "end": 84,
+                "probability": 0.7666,
+                "type": "Organization",
+                "normalized_text": "AI"
+              }
+            ],
+            "urls": [
+              {
+                "start": 253,
+                "end": 276,
+                "url": "https://t.co/CEPE0bDJt1",
+                "expanded_url": "https://x.com/Awk20000/status/1905695017186078766/photo/1",
+                "display_url": "pic.x.com/CEPE0bDJt1",
+                "media_key": "3_1905694609814192128"
+              },
+              {
+                "start": 253,
+                "end": 276,
+                "url": "https://t.co/CEPE0bDJt1",
+                "expanded_url": "https://x.com/Awk20000/status/1905695017186078766/photo/1",
+                "display_url": "pic.x.com/CEPE0bDJt1",
+                "media_key": "3_1905694609831006208"
+              }
+            ]
+          },
+          "id": "1905695017186078766",
+          "edit_history_tweet_ids": [
+            "1905694615602397649",
+            "1905694692005888495",
+            "1905695017186078766"
+          ],
+          "conversation_id": "1905695017186078766",
+          "reference_type": "quoted",
+          "author": {
+            "id": "1741916934164381696",
+            "username": "Awk20000",
+            "name": "yeet"
+          }
+        }
+      ],
+      "author_id": "16906660",
+      "entities": {
+        "annotations": [
+          {
+            "start": 243,
+            "end": 244,
+            "probability": 0.6539,
+            "type": "Organization",
+            "normalized_text": "AI"
+          }
+        ],
+        "urls": [
+          {
+            "start": 281,
+            "end": 304,
+            "url": "https://t.co/ckgjKzcDxR",
+            "expanded_url": "https://twitter.com/awk20000/status/1905695017186078766",
+            "display_url": "x.com/awk20000/statu…"
+          }
+        ]
+      },
+      "id": "1905749955295461678",
+      "edit_history_tweet_ids": [
+        "1905749955295461678"
+      ],
+      "conversation_id": "1905749955295461678",
+      "author": {
+        "id": "16906660",
+        "username": "Grummz",
+        "name": "Grummz",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1789880344965234688/eEuLmkLT_normal.jpg"
+      }
+    },
+    {
+      "text": "ICYMI: 29Rooms is making a comeback — and we want you with us at our pop-up party in Palm Springs. ✨🌵 🎡 Heading to the desert on April 12 &amp; 13? Enter now for your chance to win tickets: https://t.co/YYsjwt4Hwi https://t.co/kPen9kBF1g",
+      "created_at": "2025-03-28T22:32:49.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 5
+      },
+      "author_id": "19546942",
+      "attachments": {
+        "media_keys": [
+          "3_1905749317962604545"
+        ]
+      },
+      "entities": {
+        "annotations": [
+          {
+            "start": 7,
+            "end": 13,
+            "probability": 0.6871,
+            "type": "Other",
+            "normalized_text": "29Rooms"
+          },
+          {
+            "start": 85,
+            "end": 96,
+            "probability": 0.9541,
+            "type": "Place",
+            "normalized_text": "Palm Springs"
+          }
+        ],
+        "urls": [
+          {
+            "start": 190,
+            "end": 213,
+            "url": "https://t.co/YYsjwt4Hwi",
+            "expanded_url": "https://rb.gy/jp69xl",
+            "display_url": "rb.gy/jp69xl",
+            "images": [
+              {
+                "url": "https://pbs.twimg.com/news_img/1905749951692582912/GLJsR8qC?format=jpg&name=orig",
+                "width": 200,
+                "height": 200
+              },
+              {
+                "url": "https://pbs.twimg.com/news_img/1905749951692582912/GLJsR8qC?format=jpg&name=150x150",
+                "width": 150,
+                "height": 150
+              }
+            ],
+            "status": 200,
+            "title": "29Rooms is back and this is just the beginning.",
+            "description": "For two decades, Refinery29 has been creating spaces that break boundaries, redefine the culture, and champion self-expression. Now, to celebrate our 20th anniversary, we’re bringing back the iconic 29Rooms — bigger, bolder and more immersive than you’ve ever seen before.",
+            "unwound_url": "https://www.refinery29.com/en-us/29rooms"
+          },
+          {
+            "start": 214,
+            "end": 237,
+            "url": "https://t.co/kPen9kBF1g",
+            "expanded_url": "https://x.com/Refinery29/status/1905749950123979187/photo/1",
+            "display_url": "pic.x.com/kPen9kBF1g",
+            "media_key": "3_1905749317962604545"
+          }
+        ]
+      },
+      "id": "1905749950123979187",
+      "edit_history_tweet_ids": [
+        "1905749950123979187"
+      ],
+      "conversation_id": "1905749950123979187",
+      "author": {
+        "id": "19546942",
+        "username": "Refinery29",
+        "name": "Refinery29",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1610300919542849539/PRqRCbAF_normal.png"
+      },
+      "media": [
+        {
+          "height": 976,
+          "media_key": "3_1905749317962604545",
+          "url": "https://pbs.twimg.com/media/GnKU6FgaoAEaqHG.jpg",
+          "type": "photo",
+          "width": 976
+        }
+      ]
+    },
+    {
+      "text": "Elon Musk's AI startup acquires X in deal that values social media platform at $33 billion\nSource: NBC Universal\n\nTo read more, click the image below. https://t.co/eEWNJyL5zQ",
+      "created_at": "2025-03-28T22:32:30.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 1,
+        "quote_count": 0,
+        "bookmark_count": 1,
+        "impression_count": 10
+      },
+      "author_id": "66237835",
+      "entities": {
+        "annotations": [
+          {
+            "start": 0,
+            "end": 8,
+            "probability": 0.9748,
+            "type": "Person",
+            "normalized_text": "Elon Musk"
+          },
+          {
+            "start": 12,
+            "end": 13,
+            "probability": 0.813,
+            "type": "Organization",
+            "normalized_text": "AI"
+          },
+          {
+            "start": 99,
+            "end": 111,
+            "probability": 0.5632,
+            "type": "Organization",
+            "normalized_text": "NBC Universal"
+          }
+        ],
+        "urls": [
+          {
+            "start": 151,
+            "end": 174,
+            "url": "https://t.co/eEWNJyL5zQ",
+            "expanded_url": "https://yhoo.it/42lILQ1",
+            "display_url": "yhoo.it/42lILQ1",
+            "status": 200,
+            "title": "Elon Musk's AI startup acquires X in deal that values social media platform at $33 billion",
+            "description": "Elon Musk said Friday that his AI startup, xAI, had acquired his social media platform, X. Musk said that the deal was an all-stock transaction that valued X at $33 billion.",
+            "unwound_url": "https://www.aol.com/elon-musks-ai-startup-acquires-214503840.html"
+          }
+        ]
+      },
+      "id": "1905749869278703916",
+      "edit_history_tweet_ids": [
+        "1905749869278703916"
+      ],
+      "conversation_id": "1905749869278703916",
+      "author": {
+        "id": "66237835",
+        "username": "AOL",
+        "name": "AOL.com",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1864687458958372864/hKAM9tD-_normal.png"
+      }
+    },
+    {
+      "text": "Who needs a tetanus shot when you have monster energy drinks? https://t.co/jPsFWUEhrH",
+      "created_at": "2025-03-28T22:32:30.000Z",
+      "public_metrics": {
+        "retweet_count": 0,
+        "reply_count": 3,
+        "like_count": 2,
+        "quote_count": 0,
+        "bookmark_count": 0,
+        "impression_count": 205
+      },
+      "author_id": "1485068728412913666",
+      "attachments": {
+        "media_keys": [
+          "7_1905749752568004608"
+        ]
+      },
+      "entities": {
+        "annotations": [
+          {
+            "start": 12,
+            "end": 18,
+            "probability": 0.4796,
+            "type": "Other",
+            "normalized_text": "tetanus"
+          }
+        ],
+        "urls": [
+          {
+            "start": 62,
+            "end": 85,
+            "url": "https://t.co/jPsFWUEhrH",
+            "expanded_url": "https://x.com/interesting_aIl/status/1905749868104286696/video/1",
+            "display_url": "pic.x.com/jPsFWUEhrH",
+            "media_key": "7_1905749752568004608"
+          }
+        ]
+      },
+      "id": "1905749868104286696",
+      "edit_history_tweet_ids": [
+        "1905749868104286696"
+      ],
+      "conversation_id": "1905749868104286696",
+      "author": {
+        "id": "1485068728412913666",
+        "username": "interesting_aIl",
+        "name": "Interesting As Fuck",
+        "profile_image_url": "https://pbs.twimg.com/profile_images/1739919942223347712/nC3oBLdU_normal.jpg"
+      },
+      "media": [
+        {
+          "height": 1280,
+          "media_key": "7_1905749752568004608",
+          "type": "video",
+          "width": 720,
+          "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1905749752568004608/pu/img/KXagFpHlIN5y47LP.jpg"
+        }
+      ]
+    }
+  ],
+  "timestamp": "2025-03-28T22:33:37.619Z"
+}
